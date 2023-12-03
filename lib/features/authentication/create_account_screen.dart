@@ -104,10 +104,10 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
         ),
         leading: GestureDetector(
           onTap: _onCancelTap,
-          child: Align(
+          child: const Align(
             alignment: Alignment.centerLeft,
             child: Padding(
-              padding: const EdgeInsets.only(
+              padding: EdgeInsets.only(
                 left: Sizes.size8,
               ),
               child: Text(
@@ -165,7 +165,7 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                     ),
                   ),
                   suffixIcon: _nameValid
-                      ? Align(
+                      ? const Align(
                           alignment: Alignment.centerRight,
                           widthFactor: 1.0,
                           heightFactor: 1.0,
@@ -212,7 +212,7 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                     ),
                   ),
                   suffixIcon: _emailValid
-                      ? Align(
+                      ? const Align(
                           alignment: Alignment.centerRight,
                           widthFactor: 1.0,
                           heightFactor: 1.0,
@@ -265,7 +265,7 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                       ),
                     ),
                     suffixIcon: _dateValid
-                        ? Align(
+                        ? const Align(
                             alignment: Alignment.centerRight,
                             widthFactor: 1.0,
                             heightFactor: 1.0,
@@ -306,8 +306,8 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                     GestureDetector(
                       onTap: _onSubmit,
                       child: AnimatedContainer(
-                        duration: Duration(milliseconds: 200),
-                        padding: EdgeInsets.symmetric(
+                        duration: const Duration(milliseconds: 200),
+                        padding: const EdgeInsets.symmetric(
                           vertical: Sizes.size10,
                           horizontal: Sizes.size28,
                         ),
@@ -327,10 +327,10 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                             fontSize: Sizes.size18,
                             fontWeight: FontWeight.w600,
                           ),
-                          duration: Duration(
+                          duration: const Duration(
                             milliseconds: 200,
                           ),
-                          child: Text(
+                          child: const Text(
                             'Next',
                           ),
                         ),

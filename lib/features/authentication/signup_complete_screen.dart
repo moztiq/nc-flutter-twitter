@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nc_flutter_twitter/constants/gaps.dart';
 import 'package:nc_flutter_twitter/constants/sizes.dart';
+import 'package:nc_flutter_twitter/features/authentication/otp_screen.dart';
 import 'package:nc_flutter_twitter/features/authentication/signup_intro_screen.dart';
 import 'package:nc_flutter_twitter/features/authentication/widgets/form_button.dart';
 
@@ -15,12 +16,12 @@ class SignupCompleteScreen extends StatefulWidget {
 }
 
 class _SignupCompleteScreenState extends State<SignupCompleteScreen> {
-  Map<String, String> formData = {};
-
   void _onSubmit() {
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (context) => const SignupIntroScreen(),
+        builder: (context) => OtpScreen(
+          formData: widget.formData,
+        ),
       ),
     );
   }

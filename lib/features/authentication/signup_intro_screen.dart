@@ -22,6 +22,7 @@ class SignupIntroScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: const FaIcon(
           FontAwesomeIcons.twitter,
           size: Sizes.size32,
